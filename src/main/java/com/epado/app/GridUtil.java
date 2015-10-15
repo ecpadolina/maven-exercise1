@@ -49,12 +49,11 @@ public class GridUtil{
     }
     
     public void writeToFile(String content){
-        try {
+    try {
 			if (!file.exists()) {
 				file.createNewFile();
 			}
 			FileUtils.writeStringToFile(file,content);
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
